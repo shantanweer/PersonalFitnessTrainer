@@ -274,17 +274,17 @@ body, h1, h2, h3, p, ul, li, form {
     }
   
     .hero .content h2 {
-      font-size: 16px; /* Decrease the font size */
+      font-size: 22px; /* Decrease the font size */
       margin-bottom: 10px; /* Adjust the margin */
     }
   
     .hero .content p {
-      font-size: 10px; /* Decrease the font size */
-      margin-bottom: 15px; /* Adjust the margin */
+      font-size: 12px; /* Decrease the font size */
+      margin-bottom: 20px; /* Adjust the margin */
     }
   
     .services {
-      margin-top: 40px; /* Add margin to create space below the header */
+      margin-top: 0px; /* Add margin to create space below the header */
     }
   }
   
