@@ -255,32 +255,40 @@ body, h1, h2, h3, p, ul, li, form {
     }
   } */
   @media (max-width: 768px) {
-    .main {
-      padding: 10px;
+    .hero {
+      height: auto; /* Remove the fixed height */
+      padding: 120px 10px; /* Adjust the padding to create space around the content */
+      text-align: center; /* Center the content */
     }
   
-    .hero {
-      height: auto; /* Change height to auto */
-      padding-right: 0; /* Remove the right padding */
+    .hero::before {
+      display: none; /* Hide the overlay background */
     }
   
     .hero .content {
-      position: static; /* Remove absolute positioning */
+      position: static; /* Remove the absolute positioning */
       transform: none; /* Remove the translation */
-      text-align: left; /* Adjust the text alignment */
-      padding: 0 20px; /* Add padding to the content */
+      width: 100%; /* Adjust the width */
+      max-width: none; /* Adjust the max-width */
+      padding: 0; /* Remove the padding */
     }
   
-    .services .service {
-      flex-basis: 100%; /* Change flex-basis to 100% */
+    .hero .content h2 {
+      font-size: 16px; /* Decrease the font size */
+      margin-bottom: 10px; /* Adjust the margin */
     }
   
-    input,
-    textarea,
-    button {
-      width: 100%;
+    .hero .content p {
+      font-size: 10px; /* Decrease the font size */
+      margin-bottom: 15px; /* Adjust the margin */
+    }
+  
+    .services {
+      margin-top: 40px; /* Add margin to create space below the header */
     }
   }
+  
+  
   
   
   @media (max-width: 480px) {
@@ -297,4 +305,5 @@ body, h1, h2, h3, p, ul, li, form {
       flex-basis: 90%;
     }
   }
+  
   

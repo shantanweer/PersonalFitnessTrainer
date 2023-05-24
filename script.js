@@ -15,4 +15,4 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     document.getElementById('message').value = '';
     window.location.href = 'thanks.html';
   });
-  
+  const toggleBtn = document.querySelector('.toggle-btn');
