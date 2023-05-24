@@ -234,7 +234,7 @@ body, h1, h2, h3, p, ul, li, form {
     outline: none;
   }
   
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .main {
       padding: 10px;
     }
@@ -253,7 +253,35 @@ body, h1, h2, h3, p, ul, li, form {
     button {
       width: 100%;
     }
+  } */
+  @media (max-width: 768px) {
+    .main {
+      padding: 10px;
+    }
+  
+    .hero {
+      height: auto; /* Change height to auto */
+      padding-right: 0; /* Remove the right padding */
+    }
+  
+    .hero .content {
+      position: static; /* Remove absolute positioning */
+      transform: none; /* Remove the translation */
+      text-align: left; /* Adjust the text alignment */
+      padding: 0 20px; /* Add padding to the content */
+    }
+  
+    .services .service {
+      flex-basis: 100%; /* Change flex-basis to 100% */
+    }
+  
+    input,
+    textarea,
+    button {
+      width: 100%;
+    }
   }
+  
   
   @media (max-width: 480px) {
     nav ul li {
